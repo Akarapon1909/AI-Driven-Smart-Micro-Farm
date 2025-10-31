@@ -1,0 +1,22 @@
+{
+  "temperature": 26.76,
+  "humidity": 84.05,
+  "rain": 0,
+  "wind_speed": 2.39,
+  "condition": "Sunny",
+  "sunrise": "06:05",
+  "sunset": "18:36",
+  "time": "Saturday, October 11, 2025 at 10:26:01 AM",
+  "server_place": "Hans bantli Building (Mechanical Engineering) Chulalongkorn University",
+  "server_lat": "13.736",
+  "server_lon": "100.533",
+  "edge_temp": 28.3,
+  "edge_humi": 64.7,
+  "edge_ph": 4.9,
+  "edge_n": 186,
+  "edge_p": 477,
+  "edge_k": 472,
+  "env_temp": 28.7,
+  "env_humi": 79.1,
+  "lux": 162.5
+}

@@ -1,0 +1,391 @@
+{
+  "microgreen_growth_analysis": [
+    {
+      "day": 1,
+      "phase": "Germination",
+      "image_observation": {
+        "sprout_status": "No visible sprout emergence (expected Day 1–2)",
+        "soil_condition": "Evenly moist with slight perlite reflection",
+        "lighting_uniformity": "Top area evenly lit",
+        "illumination": 62.5,
+        "illumination_status": "Too dim for photosynthesis",
+        "fungus_or_condensation": "None detected"
+      },
+      "sensor_summary": {
+        "environment_air_temp": { "value": 28.6, "ideal_range": "25–30", "status": "Optimal" },
+        "soil_temp": { "value": 28.4, "ideal_range": "25–30", "status": "Good" },
+        "air_humidity": { "value": 74, "ideal_range": "80–95", "status": "Low" },
+        "soil_moisture": { "value": 43.9, "ideal_range": "60–80", "status": "Low" },
+        "light_intensity": { "value": 62.5, "ideal_range": "0–200 (dark) or 1000–2000 (WL)", "status": "Too dim" },
+        "soil_pH": { "value": 5.9, "ideal_range": "5.5–6.5", "status": "Acceptable" },
+        "nutrients_NPK": { "N": 23, "P": 99, "K": 92, "status": "Baseline OK" }
+      },
+      "interpretation": {
+        "literature_sources": [
+          "Light and Temperature Effects on Sprout Yield and Nutritional Composition",
+          "The Modulation of Light Quality on Carotenoid and Tocochromanol Biosynthesis in Mung Bean Sprouts"
+        ],
+        "summary": "Early dark germination (<48h) promotes elongation but limits pigment formation; controlled WL/BL exposure after Day 2 stimulates chlorophyll and carotenoid biosynthesis. Maintain warmth and humidity, light kept minimal until cotyledon cracking."
+      },
+      "control_recommendations": {
+        "irrigation": {
+          "method": "Mist",
+          "duration_sec": 3,
+          "interval_min": 30,
+          "target_soil_moisture": ">65"
+        },
+        "humidity": {
+          "target_RH": "≥85",
+          "adjustment": "Increase humidifier duty or shorten fan to 1 min / 30 min",
+          "note": "Allow slight airflow to prevent mold"
+        },
+        "lighting": {
+          "current_program": "OFF (24 h)",
+          "next_phase": "Introduce WL ≈ 1000 lux for 2 h at Day 2, then extend"
+        },
+        "temperature": {
+          "target": 28,
+          "status": "Ideal"
+        },
+        "next_imaging": {
+          "time": "15:00",
+          "note": "Same angle, exposure, white balance; include sensor overlay"
+        }
+      }
+    },
+    {
+      "day": 2,
+      "phase": "Early Germination / Imbibition-to-Emergence Transition",
+      "image_observation": {
+        "sprout_status": "No visible cotyledon emergence (≈36–48 h, late-germination phase)",
+        "soil_condition": "Evenly distributed but slightly darkened due to surface moisture loss",
+        "lighting": {
+          "mean_luminance": 134,
+          "status": "Light program started but too low for activation"
+        },
+        "color_analysis": {
+          "ExG_change": "+0.03",
+          "green_increase_percent": 5,
+          "hue_variance_sigma": "<2",
+          "coverage_percent": 0,
+          "interpretation": "Slight green hint from cotyledon swelling or perlite reflection; no chlorophyll yet"
+        },
+        "overall_tone": "Neutral-brown, no green canopy detected"
+      },
+      "sensor_summary": {
+        "environment_air_temp": { "value": 28.9, "ideal_range": "25–30", "status": "Optimal" },
+        "soil_temp": { "value": 29.0, "ideal_range": "25–30", "status": "Optimal" },
+        "air_humidity": { "value": 73.6, "ideal_range": "80–95", "status": "Low" },
+        "soil_moisture": { "value": 27.6, "ideal_range": "60–80", "status": "Critical – too dry" },
+        "light_intensity": { "value": 134.2, "ideal_range": "1000–2000 (WL activation)", "status": "Too dim" },
+        "soil_pH": { "value": 4.9, "ideal_range": "5.5–6.5", "status": "Too acidic" },
+        "nutrients_NPK": { "N": 12, "P": 73, "K": 66, "status": "Baseline OK" }
+      },
+      "interpretation": {
+        "method": "Color-based technique (Low-Cost Colour Sensors workflow)",
+        "findings": {
+          "ΔExG": "+0.03",
+          "σHue": "<2",
+          "coverage": "0%",
+          "interpretation": "Uniform substrate tone, no mold, delayed sprout cracking due to dryness"
+        },
+        "literature_sources": [
+          "Light and Temperature Effects on Sprout Yield and Nutritional Composition",
+          "Effects of Darkness and Light Spectra on Nutrients and Pigments in Sprouts"
+        ],
+        "summary": "Warmth ideal, but germination delayed by low moisture and humidity. Light before radical emergence mainly increases evaporation."
+      },
+      "control_recommendations": {
+        "irrigation": {
+          "action": "Immediate re-hydration",
+          "method": "Mist or peristaltic pump",
+          "procedure": "3 × 5-s mist cycles, 5 min apart, then auto-mist every 15 min (2–3 s)",
+          "target_soil_moisture": "60–70%"
+        },
+        "humidity": {
+          "target_RH": "≥85%",
+          "adjustment": "Increase humidifier ON-time, reduce fan cycle to 1 min every 45 min",
+          "note": "If leak detected, partially cover vent to retain vapor"
+        },
+        "lighting": {
+          "program": "WL ≈ 1000 lux for 2 h/day (simulate dawn)",
+          "mix": "WL + BL optional",
+          "note": "Keep total DLI low; maintain 134 lux for camera only"
+        },
+        "temperature": {
+          "target": "28–30 °C",
+          "status": "Optimal",
+          "note": "Avoid direct LED heat; prefer warm mist"
+        },
+        "soil_pH_correction": {
+          "current_pH": 4.9,
+          "method": "Add dolomitic lime solution or neutralize irrigation water",
+          "target_pH": "5.8–6.2"
+        },
+        "imaging_protocol": {
+          "time": "14:00–15:00",
+          "lighting_condition": "Identical exposure and white balance",
+          "measurement": "Record Lux before and after irrigation",
+          "expected_observation": "Visible radicle or pale hypocotyls; ExG > +0.10 by Day 3–4"
+        }
+      },
+      "summary_plan_day3": {
+        "mist_cycles": "Every 15 min (2–3 s) until 60–70% moisture",
+        "humidity": "85–90%",
+        "WL_light": "1000 lux × 2 h/day (after mist session)",
+        "target_pH": "5.8–6.2",
+        "next_capture": "Same time tomorrow for ΔExG and coverage tracking"
+      }
+    },
+    {
+      "day": 3,
+      "phase": "Emergence Phase",
+      "image_observation": {
+        "sprout_status": "White–yellow radicles emerging under and at edges of soil; successful imbibition and germination transition.",
+        "color_metrics": {
+          "ExG": 0.10,
+          "ΔExG_from_prev": "+0.07",
+          "hue_shift": "+10° (brown → light-yellow)",
+          "coverage_percent": "5–7",
+          "contrast_change": "Increased — confirms active emergence",
+          "interpretation": "ΔExG > 0.08 indicates vegetation onset; early chlorophyll precursor activity."
+        },
+        "lighting_condition": {
+          "note": "LED visually ON, BH1750 reads 0 lux (likely sensor saturation or capture timing)",
+          "assumed_light_state": "White light illumination active"
+        }
+      },
+      "sensor_summary": {
+        "environment_air_temp": { "value": 30.0, "ideal_range": "25–30", "status": "Optimal (upper edge)" },
+        "soil_temp": { "value": 29.9, "ideal_range": "25–30", "status": "Good" },
+        "air_humidity": { "value": 72.7, "ideal_range": "80–95", "status": "Slightly low" },
+        "soil_moisture": { "value": 67.6, "ideal_range": "60–80", "status": "Ideal" },
+        "light_intensity": { "value": 0, "ideal_range": "1000–3000 (WL target)", "status": "Sensor error or saturation" },
+        "soil_pH": { "value": 5.3, "ideal_range": "5.8–6.2", "status": "Still acidic" },
+        "nutrients_NPK": { "N": 189, "P": 484, "K": 480, "status": "Adequate (early stage)" }
+      },
+      "interpretation": {
+        "color_based_analysis": {
+          "ΔExG": "+0.07",
+          "threshold": "Vegetation onset confirmed (ΔExG > 0.08 typical of emergence)",
+          "summary": "Sprout emergence confirmed; light and pH now main limiting factors."
+        },
+        "literature_sources": [
+          "Light and Temperature Effects on Sprout Yield and Nutritional Composition",
+          "Modulation of Light Quality on Carotenoid and Tocochromanol Biosynthesis in Mung Bean Sprouts"
+        ],
+        "summary": "With ideal soil moisture and temperature, sprouts require adequate WL/BL light and pH correction to enhance chlorophyll and carotenoid formation. Proper spectral light improves pigment density and shortens hypocotyls."
+      },
+      "control_recommendations": {
+        "lighting": {
+          "program": "WL + BL mix",
+          "intensity_lux": 1500,
+          "duration": "4 h/day (two 2-h sessions: morning & afternoon)",
+          "target_PPFD": "20–30 µmol m⁻² s⁻¹",
+          "actions": [
+            "Maintain uniform illumination",
+            "Recalibrate BH1750 to prevent saturation"
+          ]
+        },
+        "moisture_humidity": {
+          "soil_moisture_target": "65–70%",
+          "method": "2-s mist every 20 min",
+          "humidity_target": "85%",
+          "fan_cycle": "1 min every 45 min",
+          "note": "Condensation acceptable if not dripping"
+        },
+        "pH_adjustment": {
+          "current_pH": 5.3,
+          "target_pH": "5.8–6.2",
+          "method": "Adjust irrigation water to pH 6.2 ± 0.2 using NaHCO₃ (1 g/L) or dilute lime"
+        },
+        "temperature": {
+          "target_range": "28–30 °C",
+          "max_limit": 31,
+          "note": "Avoid LED overheating; ventilate if needed"
+        },
+        "imaging_protocol": {
+          "time": "Same as previous (~15:00)",
+          "conditions": "Record under lights ON and OFF",
+          "purpose": "Recalibrate lux readings; compute ΔExG & Hue trajectory",
+          "expected_values": {
+            "ExG": ">0.18",
+            "coverage": ">15%",
+            "hue": "40–60° (chlorophyll activation)"
+          }
+        }
+      },
+      "summary_plan_day4": {
+        "lighting": "WL + BL mix, 1500 lux × 4 h/day",
+        "RH": "85%",
+        "soil_moisture": "65–70%",
+        "soil_pH": "5.8–6.2",
+        "temperature": "28–30 °C",
+        "next_capture": "Day 4, same time under both light ON/OFF"
+      }
+    },
+    {
+      "day": 4,
+      "phase": "Early Greening Phase",
+      "image_observation": {
+        "growth_stage": "Cotyledons visible and upright; hypocotyls elongating, transitioning from germination to early photomorphogenesis.",
+        "color_metrics": {
+          "ExG": 0.22,
+          "ΔExG_from_prev": "+0.12",
+          "hue_range_deg": "55–65",
+          "coverage_percent": 25,
+          "σHue": 4,
+          "interpretation": "Significant chlorophyll accumulation; ExG > 0.18 confirms photosynthetic activity; moderate hue variation indicates mixed canopy maturity."
+        }
+      },
+      "sensor_summary": {
+        "environment_air_temp": { "value": 28.6, "ideal_range": "25–30", "status": "Optimal" },
+        "soil_temp": { "value": 29.1, "ideal_range": "25–30", "status": "Good" },
+        "air_humidity": { "value": 79.1, "ideal_range": "80–90", "status": "Slightly low" },
+        "soil_moisture": { "value": 65.5, "ideal_range": "60–70", "status": "Ideal" },
+        "light_intensity": { "value": 33.3, "ideal_range": "1000–2000 (WL target)", "status": "Sensor under-read or insufficient" },
+        "soil_pH": { "value": 5.0, "ideal_range": "5.8–6.2", "status": "Too acidic" },
+        "nutrients_NPK": { "N": 186, "P": 478, "K": 473, "status": "Adequate (Good)" }
+      },
+      "interpretation": {
+        "color_based_analysis": {
+          "ΔExG": "+0.12",
+          "hue_shift": "≈60° (yellow-green → bright green)",
+          "σHue": 4,
+          "summary": "Chlorophyll synthesis confirmed; slight unevenness likely from light or moisture variation; pH below optimal may limit micronutrient uptake."
+        },
+        "literature_sources": [
+          "Light and Temperature Effects on Sprout Yield and Nutritional Composition",
+          "Modulation of Light Quality on Carotenoid and Tocochromanol Biosynthesis in Mung Bean Sprouts"
+        ],
+        "summary": "Ideal phase to expand WL + BL exposure to 2000 lux for enhanced pigment and tocopherol formation. Maintain stable temperature and correct pH to optimize photosynthesis."
+      },
+      "control_recommendations": {
+        "lighting": {
+          "program": "WL + BL mix",
+          "intensity_lux": 2000,
+          "duration": "6 h/day (two 3-h sessions: morning and afternoon)",
+          "canopy_distance_cm": "45–50",
+          "sensor_calibration": "If BH1750 < 100 lux under LED, apply ×20 scaling factor",
+          "goal": "Uniform illumination for pigment development"
+        },
+        "moisture_humidity": {
+          "soil_moisture_target": "65%",
+          "humidity_target": "85%",
+          "method": "Mist 2 s every 20 min; fan 1 min every 45 min",
+          "note": "Maintain light surface sheen; avoid pooling water"
+        },
+        "pH_adjustment": {
+          "current_pH": 5.0,
+          "target_pH": "5.8–6.2",
+          "irrigation_pH": "6.5 ± 0.2",
+          "method": "Use NaHCO₃ (0.5–1 g/L) or dilute lime water (1 mL/L)",
+          "check_interval": "Re-test after 12 h; avoid overshoot > 6.5"
+        },
+        "temperature": {
+          "target_range": "28–30 °C",
+          "max_limit": 31,
+          "note": "Prevent overheating from LED; allow short ventilation if RH > 90%"
+        },
+        "imaging_protocol": {
+          "method": "Capture twice: under WL+BL ON and OFF ambient",
+          "reference": "Include white reference patch for calibration",
+          "expected_next_day": {
+            "ExG": "0.30–0.35",
+            "coverage_percent": 40,
+            "hue_range_deg": "65–75 (vivid green)"
+          }
+        }
+      },
+      "summary_plan_day5": {
+        "lighting": "WL + BL mix, 2000 lux × 6 h/day",
+        "RH": "85%",
+        "soil_moisture": "65%",
+        "soil_pH": "5.8–6.2",
+        "temperature": "28–30 °C",
+        "imaging": "ON/OFF pair at same hour with white reference patch"
+      }
+    },
+    {
+      "day": 5,
+      "phase": "Early Canopy Formation Stage",
+      "image_observation": {
+        "growth_status": "Strong upright hypocotyls with open cotyledons (~5–7 cm height). Bright yellow-green cotyledons indicate active chlorophyll development. Minor photobleaching observed near LED hotspots.",
+        "color_metrics": {
+          "ExG": 0.35,
+          "ΔExG_from_prev": "+0.13",
+          "ExG_SD": "±0.03",
+          "hue_range_deg": "65–80",
+          "coverage_percent": 70,
+          "σHue": 6,
+          "interpretation": "Rapid greening and strong pigment synthesis; true-green emerging; minor unevenness (upper leaves lighter). Matches 'vigorous vegetation' class in color-sensor model."
+        }
+      },
+      "sensor_summary": {
+        "environment_air_temp": { "value": 27.8, "ideal_range": "25–30", "status": "Optimal" },
+        "soil_temp": { "value": 27.4, "ideal_range": "25–30", "status": "Stable" },
+        "air_humidity": { "value": 82.1, "ideal_range": "80–90", "status": "Good" },
+        "soil_moisture": { "value": 65.3, "ideal_range": "60–70", "status": "Ideal" },
+        "light_intensity": { "value": 107.5, "ideal_range": "≈2000 (WL+BL target)", "status": "Under-reading; recalibrate BH1750" },
+        "soil_pH": { "value": 5.0, "ideal_range": "5.8–6.2", "status": "Too acidic" },
+        "nutrients_NPK": { "N": 167, "P": 433, "K": 428, "status": "Adequate" }
+      },
+      "interpretation": {
+        "color_based_analysis": {
+          "ΔExG": "+0.13",
+          "hue_range": "65–80°",
+          "summary": "Strong chlorophyll and carotenoid buildup; slight upper-leaf bleaching from excessive LED exposure; pH 5.0 limits Mg and Ca uptake impacting pigment stability."
+        },
+        "literature_sources": [
+          "Modulation of Light Quality on Carotenoid and Tocochromanol Biosynthesis in Mung Bean Sprouts",
+          "Light and Temperature Effects on Sprout Yield and Nutritional Composition"
+        ],
+        "summary": "Photomorphogenic activity is optimal under WL + BL exposure; mild overexposure and acidity need correction for balanced pigment synthesis."
+      },
+      "control_recommendations": {
+        "lighting": {
+          "program": "WL + BL mix",
+          "intensity_lux": 2500,
+          "duration": "8 h/day (2 × 4 h sessions: morning & afternoon)",
+          "canopy_distance_cm": "Raise LED 5–10 cm or use diffuser",
+          "WL_BL_ratio": "3:1",
+          "sensor_calibration": "BH1750 under-reading (~5% of expected); apply scale ×20",
+          "goal": "Reduce photobleaching; maintain even canopy lighting"
+        },
+        "moisture_humidity": {
+          "soil_moisture_target": "≈65%",
+          "humidity_target": { "day": "80–85%", "night": "90%" },
+          "method": "Fine-mist 2 s every 25 min; fan 1 min every 45 min",
+          "note": "Ensure light airflow to prevent fungal buildup"
+        },
+        "pH_adjustment": {
+          "current_pH": 5.0,
+          "target_pH": "5.8–6.2",
+          "irrigation_pH": "6.5 ± 0.2",
+          "method": "Irrigate with dilute lime (1 mL/L) or NaHCO₃ (0.5 g/L)",
+          "timeframe": "Adjust within 24 h"
+        },
+        "temperature": {
+          "target_range": "27–30 °C",
+          "max_limit": 31,
+          "note": "Keep below 31 °C to protect chlorophyll integrity"
+        },
+        "imaging_protocol": {
+          "method": "Dual capture (lights ON for pigment intensity, OFF for true color)",
+          "expected_next_day": {
+            "ExG": "≈0.45",
+            "hue_range_deg": "75–85 (vivid green)"
+          }
+        }
+      },
+      "summary_plan_day6": {
+        "lighting": "WL + BL mix 2500 lux × 8 h/day; raise LED distance 5–10 cm",
+        "humidity": "80–85% (day), 90% (night)",
+        "soil_moisture": "≈65%",
+        "soil_pH": "5.8–6.2 (after correction)",
+        "temperature": "27–30 °C",
+        "imaging": "Dual capture (ON/OFF) for ExG tracking"
+      }
+    }
+  ]
+}

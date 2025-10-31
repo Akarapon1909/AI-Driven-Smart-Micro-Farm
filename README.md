@@ -21,3 +21,7 @@ Component	Description
 - SHT31, BH1750	Temp, humidity, and light sensing
 - Mist Nozzles + Solenoids	Automated fog and watering
 - Pi Camera	Image capture every hour
+
+🌿 Dataset Overview: AI-Assisted Microgreen Cultivation
+This data repository supports the development of a smart microgreen farming platform by integrating sensor data acquisition, visual monitoring, and AI-assisted control. In this experiment, microgreens are cultivated under controlled indoor conditions, and a suite of sensors continuously monitors soil moisture, air temperature, relative humidity, and ambient light intensity. Simultaneously, a camera module captures real-scene time-lapse images of plant growth at hourly intervals.
+The collected multimodal data are then analyzed by an AI model, which generates adaptive control strategies—specifically tailored light recipes, watering intervals, and mist cycles—based on both environmental feedback and growth stage classification. This human–AI collaborative workflow enables a dynamic and data-driven approach to urban farming, optimizing resource use and enhancing crop yield within compact living spaces.

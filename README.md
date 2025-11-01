@@ -39,6 +39,6 @@ Major subsystems:
 - **Mist generator**, **fan**, and **solenoid pump** for closed-loop climate regulation  
 - Single **12 V DC power supply** with isolated outputs for digital and electromechanical circuits  
 
-All components are **locally sourced in Thailand** (Gravitech, INEX, ArduinoAll) to ensure affordability and replicability:contentReference[oaicite:4]{index=4}.
+All components are **locally sourced in Thailand** (Gravitech, INEX, ETT) to ensure affordability and replicability.
 
 ---

@@ -1,4 +1,4 @@
-🌱 Smart Microgreen Farming Platform
+## 🌱 Smart Microgreen Farming Platform
 AI-Driven Light Recipe Control for Urban Agriculture
 A human–AI collaborative farming platform.
 

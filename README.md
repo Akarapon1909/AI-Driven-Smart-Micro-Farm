@@ -42,7 +42,8 @@ Major subsystems:
 All components are **locally sourced in Thailand** (Gravitech, INEX, ETT) to ensure affordability and replicability.
 
 ---
-📊 Summary of Data Repository
+
+## 📊 Summary of Data Repository
 
 The AI–Driven Smart Micro-Farm data repository comprises three synchronized datasets acquired during real microgreen cultivation, collectively capturing the full perception–reasoning–actuation cycle of the system.
 Together they enable quantitative, visual, and cognitive reconstruction of plant growth and AI decision-making.

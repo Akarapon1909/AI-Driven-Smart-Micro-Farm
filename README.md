@@ -12,7 +12,7 @@ Time-lapse–based growth monitoring
 The project demonstrates how AI can co-design and co-operate with humans to create an autonomous microgreen farming solution using commercially available components in Thailand.
 
 ## 🏗 System Architecture
-The micro-farm is structured as a **three-layer CPS** (Figure 1 in the paper):
+The micro-farm is structured as a **three-layer CPS** :
 
 | Layer | Function | Hardware / Tools |
 |-------|-----------|------------------|
@@ -23,7 +23,7 @@ The micro-farm is structured as a **three-layer CPS** (Figure 1 in the paper):
 - The **ESP32** manages soil moisture, temperature, humidity, and irrigation/fan control.  
 - The **RP2040** provides **6-channel PWM lighting** for spectral tuning (Red 660 nm, Blue 450 nm, Violet 405 nm, Green, Yellow, White).  
 - The **Raspberry Pi 5** hosts the **Edge-AI inference engine**, camera acquisition, and MQTT broker for low-latency coordination.  
-Latency between sensing and actuation is **< 200 ms**, ensuring responsive environmental control:contentReference[oaicite:3]{index=3}.
+Latency between sensing and actuation is **< 200 ms**, ensuring responsive environmental control.
 
 ---
 

@@ -17,6 +17,8 @@ The system integrates:
 
 This platform demonstrates how **AI can co-design and co-operate with humans** to create an autonomous microgreen farming solution using **commercially available components in Thailand**.
 
+![hardware](Figures/Hardware.jpg)
+
 ---
 
 ## 🏗 System Architecture
@@ -35,6 +37,7 @@ The micro-farm operates as a **three-layer cyber–physical system (CPS):**
 
 ⚙️ **System performance:** Latency between sensing and actuation is **< 200 ms**, ensuring responsive environmental control.
 
+![system architecture](Figures/System%20Architecture.png)
 ---
 
 ## 🔩 Hardware Design

@@ -42,3 +42,12 @@ Major subsystems:
 All components are **locally sourced in Thailand** (Gravitech, INEX, ETT) to ensure affordability and replicability.
 
 ---
+📊 Summary of Data Repository
+
+The AI–Driven Smart Micro-Farm data repository comprises three synchronized datasets acquired during real microgreen cultivation, collectively capturing the full perception–reasoning–actuation cycle of the system.
+Together they enable quantitative, visual, and cognitive reconstruction of plant growth and AI decision-making.
+
+Part	Dataset	Core Content	Purpose & Research Use
+I	Environmental & Sensor Dataset	Continuous numerical logs of soil temperature and moisture, air temperature and humidity, light intensity, pH, nutrient (NPK) levels, and actuator states collected every minute during 10-day Brassica juncea microgreen cycles.	Provides the physical layer of the CPS — for control-system validation, environment–growth correlation, and energy-efficiency analysis.
+II	Time-Lapse Scene Dataset	Hourly high-resolution images (1920 × 1080 px) of the growth tray captured by the Raspberry Pi camera, synchronized with lighting and sensor data.	Offers the visual layer — supporting phenotypic tracking, color-index (ExG, Hue, Coverage) computation, and AI training for stage classification and canopy analysis.
+III	AI Growth-Analysis and Actuation Dialogue Dataset	Daily JSON records summarizing the AI’s perception (sensor + image interpretation), reasoning with literature references, and generated control recommendations (irrigation, humidity, lighting, pH adjustment).	Represents the cognitive layer — enabling explainable-AI studies, rule extraction, and evaluation of adaptive decision quality across growth phases.

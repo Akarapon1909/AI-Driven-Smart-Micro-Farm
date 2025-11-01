@@ -2,7 +2,7 @@
 AI-Driven Light Recipe Control for Urban Agriculture
 A human–AI collaborative farming platform.
 
-📌 Overview
+## 📌 Overview
 This project presents a modular, low-cost, and intelligent plant farming system designed for use in space-constrained urban settings, such as condominiums. The system integrates:
 Spectrum-adjustable grow lights
 Automated irrigation and ventilation

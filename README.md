@@ -65,9 +65,3 @@ Together, they enable **quantitative, visual, and cognitive reconstruction** of 
 | **II** | **Time-Lapse Scene Dataset** | Hourly high-resolution images (1920 × 1080 px) of the growth tray captured by the Raspberry Pi Camera, synchronized with lighting and sensor data. | Offers the **visual layer** — supporting phenotypic tracking, color-index (ExG, Hue, Coverage) computation, and AI training for stage classification and canopy analysis. |
 | **III** | **AI Growth-Analysis and Actuation Dialogue Dataset** | Daily JSON records summarizing the AI’s perception (sensor + image interpretation), reasoning with literature references, and generated control recommendations (irrigation, humidity, lighting, pH adjustment). | Represents the **cognitive layer** — enabling explainable-AI studies, rule extraction, and evaluation of adaptive decision quality across growth phases. |
 
-📁 **Integration:**  
-All datasets share common timestamps (UTC +7) and experiment IDs, enabling full replay of the cultivation process — from environmental sensing to AI reasoning and plant-response observation.
-
----
-- ** II	Time-Lapse Scene Dataset	Hourly high-resolution images (1920 × 1080 px) of the growth tray captured by the Raspberry Pi camera, synchronized with lighting and sensor data.	Offers the visual layer — supporting phenotypic tracking, color-index (ExG, Hue, Coverage) computation, and AI training for stage classification and canopy analysis.
-- ** III	AI Growth-Analysis and Actuation Dialogue Dataset	Daily JSON records summarizing the AI’s perception (sensor + image interpretation), reasoning with literature references, and generated control recommendations (irrigation, humidity, lighting, pH adjustment).	Represents the cognitive layer — enabling explainable-AI studies, rule extraction, and evaluation of adaptive decision quality across growth phases.
